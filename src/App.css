@@ -1,0 +1,113 @@
+/* Make sure body takes full height and no scroll */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background image styling */
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Weather box */
+.box {
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.h1title{
+  color: #ffffff;
+}
+.textlayout{
+  margin-right:5px ;
+}
+/* Input field */
+input {
+  padding: 10px;
+  width: 70%;
+  max-width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+/* Button */
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  margin-left: 8px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #005fd6;
+}
+
+/* Weather info box */
+.info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.info h2 {
+  color: #ffffff;
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.info p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+.shimmer {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f6f7f8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.shimmer-line {
+  height: 16px;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 1200px 104px;
+  animation: shimmer 1.2s infinite linear;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.shimmer-line.short {
+  width: 50%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: 1200px 0;
+  }
+}
